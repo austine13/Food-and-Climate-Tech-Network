@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get Involved - Food and Climate Tech Network</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="main-nav">
+       <!-- Hamburger button for mobile -->
+  <button class="nav-toggle" aria-label="Open navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="get-involved.html" class="active">Get Involved</a></li>
+        <li><a href="donations.html" class="support-btn">Support Us</a></li>
+      </ul>
+    </nav>
+    <h1>Get Involved</h1>
+    <p>Join us in making a difference in agriculture and climate resilience.</p>
+  </header>
+
+  <main>
+    <section class="engagement-options">
+      <h2>Ways to Get Involved</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>🌱 Volunteer</h3>
+          <p>Join our field teams and support community projects.</p>
+          <button onclick="openModal('volunteer')">Learn More</button>
+        </div>
+        <div class="card">
+          <h3>🤝 Partner</h3>
+          <p>Collaborate with us to scale sustainable agriculture.</p>
+          <button onclick="openModal('partner')">Become a Partner</button>
+        </div>
+        <div class="card">
+          <h3>📚 Training</h3>
+          <p>Participate in our climate-smart agriculture programs.</p>
+          <button onclick="openModal('training')">Join Training</button>
+        </div>
+        <div class="card">
+          <h3>📣 Advocate</h3>
+          <p>Help spread our mission on social media and beyond.</p>
+          <button onclick="openModal('advocate')">Start Sharing</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+  <div id="volunteer-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('volunteer')">&times;</span>
+      <h2>Volunteer with Us</h2>
+      <p>We welcome volunteers in field support, training, and digital outreach. Fill out our form to get started!</p>
+      <a href="volunteer-form.html" class="button">Sign Up</a>
+    </div>
+  </div>
+
+  <div id="partner-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('partner')">&times;</span>
+      <h2>Become a Partner</h2>
+      <p>Support our mission through funding, resources, or strategic collaboration.</p>
+      <a href="partner-form.html" class="button">Partner With Us</a>
+    </div>
+  </div>
+
+  <div id="training-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('training')">&times;</span>
+      <h2>Join Our Training</h2>
+      <p>Learn climate-smart agriculture techniques and community engagement strategies.</p>
+      <a href="training-signup.html" class="button">Register</a>
+    </div>
+  </div>
+
+  <div id="advocate-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('advocate')">&times;</span>
+      <h2>Become an Advocate</h2>
+      <p>Share our mission online and help us reach more communities.</p>
+      <a href="advocacy-kit.html" class="button">Get the Kit</a>
+    </div>
+  </div>
+  </main>
+
+<!-- Contact & Footer -->
+  <footer>
+  <h2>Contact Us</h2>
+  <p>Email: info@kilimohakika.com | Phone: +123 456 7890</p>
+  <div class="social-links">
+    <a href="https://facebook.com/yourpage" target="_blank" title="Facebook">
+      <img src="images/Facebook.jpeg" alt="Facebook" style="width:32px; height:32px;">
+    </a>
+    <a href="https://twitter.com/yourpage" target="_blank" title="Twitter">
+      <img src="images/Twitter.png" alt="Twitter" style="width:32px; height:32px;">
+    </a>
+    <a href="https://instagram.com/yourpage" target="_blank" title="Instagram">
+      <img src="images/IG.png" alt="Instagram" style="width:32px; height:32px;">
+    </a>
+  </div>
+  <form id="subscribe">
+    <label for="email" ></label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" style="padding: 0.5rem; border-radius: 4px; border: none; margin-bottom: 0.5rem; width: 100%; max-width: 220px;">
+    <button type="submit" style="background: #fff; color: #2e8b57; border: none; border-radius: 4px; padding: 0.5rem 1.2rem; cursor: pointer; font-weight: bold; transition: background 0.2s, color 0.2s;">Subscribe</button>
+  </form>
+  <p style="margin: 0.5rem 0 0 0; font-size: 0.95rem;">&copy; 2025 Kilimo Hakika. All rights reserved.</p>
+</footer>
+
+  
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id + '-modal').style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById(id + '-modal').style.display = 'none';
+    }
+
+    document.getElementById("subscribe").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      if (email) {
+        alert("Thank you for subscribing, " + email + "!");
+        document.getElementById("email").value = "";
+      }
+    });
+  </script>
+  <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.main-nav ul');
+  if(navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+  }
+</script>
+</body>
+</html>

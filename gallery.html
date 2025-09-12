@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery - Food and Climate Tech Network</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header class="hero">
+    <nav class="main-nav">
+      <!--Hamburger toggle for mobile-->
+      <button class="nav-toggle" aria-label="Open navigation">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="donations.html" class="support-btn">Support Us</a></li>
+
+      </ul>
+    </nav>
+    <h1>Gallery</h1>
+    <p>Explore moments from our projects and community events.</p>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Our Work in Action</h2>
+      <p>Discover how we empower farmers, youth, and women through innovative agricultural practices and community engagement.</p>
+      <p>Browse through our gallery to see the impact of our initiatives and the vibrant communities we serve.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-container">
+      <div class="gallery-frame">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/goats.png" alt="Livestock">
+          <div class="gallery-caption">Livestock</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/manderatraining.png" alt="Youth Empowerment">
+          <div class="gallery-caption">Youth Empowerment Training</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/megan.png" alt="Trainer">
+          <div class="gallery-caption">Trainer</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/drone.png" alt="Drone Technology">
+          <div class="gallery-caption">Drone Technology</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/farm2.png" alt="Innovation Testing">
+          <div class="gallery-caption">Innovation Testbed in Action</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/farm.png" alt="Women in Agriculture">
+          <div class="gallery-caption">Women in Agriculture</div>
+        </div>
+         <div class="gallery-item">
+          <img src="images/team.png" alt="The Team">
+          <div class="gallery-caption">The Team</div>
+        </div>
+         <div class="gallery-item">
+          <img src="images/training.png" alt="Training Session">
+          <div class="gallery-caption">Training Session</div>
+        </div>
+        <!-- Add more gallery items as needed -->
+      </div>
+    </section>
+    <!-- Donation Section -->
+    <section class="donation-section">
+  <div class="donation-content">
+    <h2>Support our Mission</h2>
+    <p>Your contribution enables us to drive impactful change in agriculture and empower communities.</p>
+    <p>Your donation helps us empower more farmers, youth, and women with climate-smart solutions and digital tools.</p>
+    <a href="donations.html" class="cta-button">Donate Now</a>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <h2>Contact Us</h2>
+    <p>Email: info@kilimohakika.com | Phone: +123 456 7890</p>
+    <div class="social-links">
+      <a href="https://facebook.com/yourpage" target="_blank" title="Facebook">
+        <img src="images/Facebook.jpeg" alt="Facebook" style="width:32px; height:32px;">
+      </a>
+      <a href="https://twitter.com/yourpage" target="_blank" title="Twitter">
+        <img src="images/Twitter.png" alt="Twitter" style="width:32px; height:32px;">
+      </a>
+      <a href="https://instagram.com/yourpage" target="_blank" title="Instagram">
+        <img src="images/IG.png" alt="Instagram" style="width:32px; height:32px;">
+      </a>
+    </div>
+    <form id="subscribe">
+      <label for="email"></label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" style="padding: 0.5rem; border-radius: 4px; border: none; margin-bottom: 0.5rem; width: 100%; max-width: 220px;">
+      <button type="submit" style="background: #fff; color: #2e8b57; border: none; border-radius: 4px; padding: 0.5rem 1.2rem; cursor: pointer; font-weight: bold; transition: background 0.2s, color 0.2s;">Subscribe</button>
+    </form>
+    <p style="margin: 0.5rem 0 0 0; font-size: 0.95rem;">&copy; 2025 Your Organization Name. All rights reserved.</p>
+  </footer>
+  <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.main-nav ul');
+  if(navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects - Food and Climate Tech Network</title>
+  <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="main-nav">
+        <!-- Hamburger button for mobile -->
+  <button class="nav-toggle" aria-label="Open navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="donations.html" class="support-btn">Support Us</a></li>
+
+      </ul>
+    </nav>
+    <h1>Our Projects</h1>
+  </header>
+
+  <main>
+    <!--Overview Section-->
+    <section id="overview">
+      <h2>Project Overview</h2>
+      <p>Our projects aim to address the challenges of food security and climate change through innovative solutions and community engagement.</p>
+    </section>
+
+    <!-- Projects Section with Cards -->
+    <section id="projects">
+      <div class="projects-frame">
+      <div class="project-cards">
+        <div class="project-card">
+          <img src="images/plant.jpg" alt="Sustainable Farming" class="project-img">
+          <h3>Sustainable Farming</h3>
+          <p>Enhancing food security through eco-friendly practices.</p>
+          <button class="details-btn" onclick="openModal(1)">Read More</button>
+        </div>
+        <div class="project-card">
+          <img src="images/raingauge.png" alt="Digital Advisory" class="project-img">
+          <h3>Digital Advisory Platform</h3>
+          <p>Real-time weather and market info for farmers.</p>
+          <button class="details-btn" onclick="openModal(2)">Read More</button>
+        </div>
+        <div class="project-card">
+          <img src="images/training.png" alt="Youth Training" class="project-img">
+          <h3>Youth Training</h3>
+          <p>Empowering youth with modern agri-tech skills.</p>
+          <button class="details-btn" onclick="openModal(3)">Read More</button>
+        </div>
+        <div class="project-card">
+          <img src="images/fish.png" alt="Aquaculture Development" class="project-img">
+          <h3>Aquaculture Development</h3>
+          <p>Promoting sustainable fish farming practices.</p>
+          <button class="details-btn" onclick="openModal(4)">Read More</button>
+        </div>
+      </div>
+
+      <!-- Modals for project details -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(1)">&times;</span>
+          <h2>Sustainable Farming</h2>
+          <p><strong>Description:</strong> This project focuses on sustainable farming practices to enhance food security.</p>
+          <p><strong>Objectives:</strong> Improve crop yields, promote eco-friendly techniques, and support local farmers.</p>
+          <p><strong>Outcomes:</strong> Increased productivity and income for participating farmers.</p>
+        </div>
+      </div>
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(2)">&times;</span>
+          <h2>Digital Advisory Platform</h2>
+          <p><strong>Description:</strong> A digital platform providing farmers with real-time weather updates and market prices.</p>
+          <p><strong>Objectives:</strong> Enhance decision-making and reduce losses due to climate variability.</p>
+          <p><strong>Outcomes:</strong> Improved access to information and better market engagement.</p>
+        </div>
+      </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(3)">&times;</span>
+          <h2>Youth Training</h2>
+          <p><strong>Description:</strong> Training programs for youth in innovative agricultural techniques.</p>
+          <p><strong>Objectives:</strong> Equip young people with skills for sustainable agriculture and entrepreneurship.</p>
+          <p><strong>Outcomes:</strong> Increased youth participation in agriculture and job creation.</p>
+        </div>
+      </div>
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(4)">&times;</span>
+          <h2>Aquaculture Development</h2>
+          <p><strong>Description:</strong> Promoting sustainable fish farming practices to enhance nutrition and livelihoods.</p>
+          <p><strong>Objectives:</strong> Train farmers in aquaculture techniques and improve fish production.</p>
+          <p><strong>Outcomes:</strong> Increased fish yields and improved food security in target communities.</p>
+        </div>
+      </section>
+
+
+<!--Get involved-->
+<section id="get-involved" style="text-align:center; padding:2rem 1rem;" >
+  <h2>Get Involved</h2>
+  <p>Want to make a difference? Join us as a volunteer, partner, or advocate for sustainable agriculture!</p>
+
+  <ul style="list-style:none; padding:0; max-width:600px; margin:1rem auto; text-align:left;">
+    <li><strong>Volunteer:</strong> Support field training, community outreach, or digital literacy programs.</li>
+    <li><strong>Partner:</strong> Collaborate on agri-tech validation, youth empowerment, or climate resilience initiatives.</li>
+    <li><strong>Advocate:</strong> Champion inclusive agricultural policies and amplify farmer voices.</li>
+  </ul>
+
+  <img src="images/Get-involved.webp" alt="Join Us Icon" style="width:160px; margin:1rem auto;">
+
+  <blockquote style="font-style:italic; margin:1rem auto; max-width:600px;">
+    “Volunteering with Kilimo Hakika opened my eyes to the power of community-driven innovation.”
+    <br>— Amina, Youth Digital Champion
+  </blockquote>
+
+  <p>By joining us, you help scale climate-smart agriculture, empower youth and women, and build resilient food systems across Africa.</p>
+
+  <a href="get-involved.html" class="cta-button">Get Involved</a>
+  <a href="donations.html" class="cta-button">Donate Now</a>
+</section>
+
+  <section class="donation-section">
+  <div class="donation-content">
+    <h2>Support our Mission</h2>
+    <p>Your contribution enables us to drive impactful change in agriculture and empower communities.</p>
+    <p>Your donation helps us empower more farmers, youth, and women with climate-smart solutions and digital tools.</p>
+    <a href="donations.html" class="cta-button">Donate Now</a>
+  </div>
+</section>
+    
+  </main>
+
+  <!-- Contact & Footer -->
+  <footer>
+    <h2>Contact Us</h2>
+    <p>Email: info@kilimohakika.com | Phone: +123 456 7890</p>
+    <div class="social-links">
+      <a href="https://facebook.com/yourpage" target="_blank" title="Facebook">
+        <img src="images/Facebook.jpeg" alt="Facebook" style="width:32px; height:32px;">
+      </a>
+      <a href="https://twitter.com/yourpage" target="_blank" title="Twitter">
+        <img src="images/Twitter.png" alt="Twitter" style="width:32px; height:32px;">
+      </a>
+      <a href="https://instagram.com/yourpage" target="_blank" title="Instagram">
+        <img src="images/IG.png" alt="Instagram" style="width:32px; height:32px;">
+      </a>
+    </div>
+    <form id="subscribe">
+      <label for="email"></label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" style="padding: 0.5rem; border-radius: 4px; border: none; margin-bottom: 0.5rem; width: 100%; max-width: 220px;">
+      <button type="submit" style="background: #fff; color: #2e8b57; border: none; border-radius: 4px; padding: 0.5rem 1.2rem; cursor: pointer; font-weight: bold; transition: background 0.2s, color 0.2s;">Subscribe</button>
+    </form>
+    <p style="margin: 0.5rem 0 0 0; font-size: 0.95rem;">&copy; 2025 Your Organization Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.main-nav ul');
+
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+</script> 
+
+  <script>
+    function openModal(num) {
+      document.getElementById('modal' + num).style.display = 'flex';
+    }
+    function closeModal(num) {
+      document.getElementById('modal' + num).style.display = 'none';
+    }
+    // Optional: Close modal when clicking outside content
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', function(e) {
+        if (e.target === this) this.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>

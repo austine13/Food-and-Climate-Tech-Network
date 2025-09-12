@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donations - Food and Climate Tech Network</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="donations-body">
+  <header class="donation-hero">
+    <nav class="main-nav">
+      <!-- Hamburger button for mobile -->
+  <button class="nav-toggle" aria-label="Open navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="donations.html" class="active">Donations</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="donations.html" class="support-btn">Support Us</a></li>
+      </ul>
+    </nav>
+    <h1>Support Our Cause</h1>
+    <p>Your donation helps us empower communities and promote sustainable agriculture.</p>
+  </header>
+
+  <main>
+    <!-- Impact Statement & Testimonial -->
+    <section class="donation-impact">
+      <h2>Your Impact</h2>
+      <p>Every donation helps us train more farmers, support youth and women, and build a climate-smart future for all.</p>
+      <div class="quote">“Thanks to your support, I was able to start my own sustainable farm and provide for my family.”<br><span style="font-size:0.95em;">— Jane, Beneficiary</span></div>
+    </section>
+
+    <!-- Donation Methods with Icons -->
+    <section class="donation-methods">
+      <h2>How to Donate</h2>
+      <ul>
+        <li>
+          <img src="images/mpesa.png" alt="M-Pesa" title="Mobile Money">
+          Mobile Money: <strong>Paybill 123456</strong>
+        </li>
+        <li>
+          <img src="images/bank.png" alt="Bank" title="Bank Transfer">
+          Bank Transfer: <strong>Account No. 987654321, Kilimo Hakika Bank</strong>
+        </li>
+      </ul>
+      <div style="margin-top:1rem; color:#2e8b57; font-size:0.98rem;">
+        <span style="font-size:1.2em;">&#128274;</span> Secure &amp; confidential
+      </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="donation-form-section">
+      <h2>Make a Donation</h2>
+      <form class="donation-form" id="donationForm" autocomplete="off">
+        <label for="amount">Amount (KES):</label>
+        <input type="number" id="amount" name="amount" min="10" required placeholder="e.g. 1000" aria-label="Donation Amount">
+
+        <label for="method">Payment Method:</label>
+        <select id="method" name="method" required aria-label="Payment Method">
+          <option value="">Select...</option>
+          <option value="mobile">Mobile Money</option>
+          <option value="bank">Bank Transfer</option>
+          <option value="online">Online Portal</option>
+        </select>
+
+        <div class="secure-note"><span class="lock">&#128274;</span> Secure &amp; confidential</div>
+
+        <button type="submit" class="cta-button" aria-label="Proceed to Donate">Proceed to Donate</button>
+        <div class="donation-thankyou" id="donationThankYou">Thank you for your generosity!</div>
+      </form>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="donation-faq">
+      <h3>Frequently Asked Questions</h3>
+      <dl>
+        <dt>Is my donation tax deductible?</dt>
+        <dd>Yes, all donations are eligible for tax deduction. You will receive a receipt after your donation.</dd>
+        <dt>Can I donate from outside Kenya?</dt>
+        <dd>Yes, our online portal accepts international payments.</dd>
+        <dt>How will my donation be used?</dt>
+        <dd>Your donation will support farmer training, youth empowerment, and climate-smart agriculture projects.</dd>
+      </dl>
+      <p style="margin-top:1rem;">Still have questions? <a href="contacts.html">Contact us here.</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Contact Us</h2>
+    <p>Email: info@kilimohakika.com | Phone: +123 456 7890</p>
+    <div class="social-links">
+      <a href="https://facebook.com/yourpage" target="_blank" title="Facebook">
+        <img src="images/Facebook.jpeg" alt="Facebook" style="width:32px; height:32px;">
+      </a>
+      <a href="https://twitter.com/yourpage" target="_blank" title="Twitter">
+        <img src="images/Twitter.png" alt="Twitter" style="width:32px; height:32px;">
+      </a>
+      <a href="https://instagram.com/yourpage" target="_blank" title="Instagram">
+        <img src="images/IG.png" alt="Instagram" style="width:32px; height:32px;">
+      </a>
+    </div>
+    <form id="subscribe">
+      <label for="email"></label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" style="padding: 0.5rem; border-radius: 4px; border: none; margin-bottom: 0.5rem; width: 100%; max-width: 220px;">
+      <button type="submit" style="background: #fff; color: #2e8b57; border: none; border-radius: 4px; padding: 0.5rem 1.2rem; cursor: pointer; font-weight: bold; transition: background 0.2s, color 0.2s;">Subscribe</button>
+    </form>
+    <p style="margin: 0.5rem 0 0 0; font-size: 0.95rem;">&copy; 2025 Kilimo Hakika. All rights reserved.</p>
+  </footer>
+  <script>
+    // Simple thank you message for the donation form
+    document.getElementById('donationForm').onsubmit = function(e) {
+      e.preventDefault();
+      document.getElementById('donationThankYou').style.display = 'block';
+      this.reset();
+    };
+  </script>
+  <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.main-nav ul');
+  if(navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+  }
+</script>
+</body>
+</html>

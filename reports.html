@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reports - Food and Climate Tech Network</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="main-nav">
+      <!-- Hamburger button for mobile -->
+  <button class="nav-toggle" aria-label="Open navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="reports.html" class="active">Reports</a></li>
+        <li><a href="donations.html" class="support-btn">Support Us</a></li>
+      </ul>
+    </nav>
+    <h1>Our Reports</h1>
+    <p>Explore our latest impact and project reports.</p>
+  </header>
+
+  <main>
+    <section id="annual-reports">
+      <h2>Annual Reports</h2>
+      <ul>
+        <li>
+          <a href="reports/annual-report-2024.pdf" target="_blank">Annual Report 2024</a>
+        </li>
+        <li>
+          <a href="reports/annual-report-2023.pdf" target="_blank">Annual Report 2023</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="project-reports">
+      <h2>Project Reports</h2>
+      <ul>
+        <li>
+          <a href="reports/project-agritech.pdf" target="_blank">AgriTech Innovation Project</a>
+        </li>
+        <li>
+          <a href="reports/project-youth.pdf" target="_blank">Youth Empowerment in Agriculture</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Contact Us</h2>
+    <p>Email: info@kilimohakika.com | Phone: +123 456 7890</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+    <form id="subscribe">
+      <label for="email">Subscribe to our newsletter:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; 2025 Kilimo Hakika. All rights reserved.</p>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.main-nav ul');
+  if(navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+  }
+</script>
+</body>
