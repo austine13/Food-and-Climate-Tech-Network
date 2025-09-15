@@ -78,10 +78,11 @@ body {
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
+  min-height: 350px;
   background: linear-gradient(rgba(46,139,87,0.5), rgba(46,139,87,0.5)), url('images/pasture.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
-  padding: 13rem 1rem 10rem 1rem; /* Increased top and bottom padding */
+  padding: 0;
   background-size: cover;
   background-position: center;
 }
@@ -1190,19 +1191,19 @@ footer .social-links a:hover {
 
 /* Additional donation page specific styles can go here */
     .donation-hero {
-      background: linear-gradient(120deg, #4caf50 60%, #2196f3 100%);
+  background: linear-gradient(rgba(46,139,87,0.5), rgba(46,139,87,0.5)), url('images/pasture.jpg') center/cover no-repeat;
       padding: 3rem 1rem 2rem 1rem;
       text-align: center;
     }
     .donation-hero h1 {
       font-size: 2.5rem;
-      color: #2e8b57;
+      color: white;
       margin-bottom: 1rem;
     }
     .donation-hero p {
       font-size: 1.2rem;
       margin-bottom: 1.5rem;
-      color: #444;
+      color: white;
     }
     .donation-impact {
       background: #fff;
