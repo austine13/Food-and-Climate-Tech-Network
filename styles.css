@@ -43,7 +43,7 @@
   border-bottom: 2px solid #ffd700;
 }
 .main-nav .support-btn {
-  background-color: #2E8B57;
+  background-color: #16f577;
   color: #fff;
   border-radius: 5px;
   padding: 8px 16px;
@@ -54,7 +54,7 @@
 }
 
 .main-nav .support-btn:hover {
-  background-color: #246b45;
+  background-color: #bee60e;
 }
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li, a, button, input, form {
@@ -118,8 +118,8 @@ body {
 /* Section Styles */
 section {
   max-width: 900px;
-  margin: 2.5rem auto;
-  padding: 2rem 1.5rem;
+  margin: 0.5rem auto;
+  padding: 0.5rem 0.3rem;
   background: none;
   border-radius: 0;
   box-shadow: none;
@@ -127,7 +127,7 @@ section {
 
 section h2 {
   color: black;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -161,12 +161,12 @@ section a:hover {
 #programs .program {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.7rem;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 #programs .program img {
@@ -317,13 +317,13 @@ footer .social-links a:hover {
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 0.7rem;
+  margin-top: 0.7rem;
 }
 
 .card {
   background: #e8f5e9;
-  padding: 1.5rem;
+  padding: 0.7rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
