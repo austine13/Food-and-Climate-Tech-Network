@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advocacy Kit Application | Kilimo Hakika</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: #f1f8e9;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(46,139,87,0.08);
+      padding: 2rem 1.5rem;
+    }
+    h1 {
+      color: #2e8b57;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+      color: #246b43;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    button {
+      background: #2e8b57;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 0.7rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      width: 100%;
+    }
+    button:hover {
+      background: #246b43;
+    }
+    .success-message {
+      display: none;
+      color: #2e8b57;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Advocacy Kit Application</h1>
+    <form id="advocacy-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="organization">Organization (if any)</label>
+      <input type="text" id="organization" name="organization">
+
+      <label for="purpose">Purpose for Advocacy Kit</label>
+      <textarea id="purpose" name="purpose" rows="4" required></textarea>
+
+      <label for="kit-type">Type of Advocacy Kit</label>
+      <select id="kit-type" name="kit-type" required>
+        <option value="">-- Select --</option>
+        <option value="climate">Climate Action Kit</option>
+        <option value="youth">Youth Empowerment Kit</option>
+        <option value="community">Community Awareness Kit</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit">Apply</button>
+      <div class="success-message" id="success-message">Thank you for your application! We will contact you soon.</div>
+    </form>
+  </div>
+  <script>
+    document.getElementById('advocacy-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('success-message').style.display = 'block';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
