@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Volunteer With Us | Kilimo Hakika</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: #f1f8e9;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .volunteer-container {
+      max-width: 500px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(46,139,87,0.08);
+      padding: 2rem 1.5rem;
+    }
+    h1 {
+      color: #2e8b57;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+      color: #246b43;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    button {
+      background: #2e8b57;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 0.7rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      width: 100%;
+    }
+    button:hover {
+      background: #246b43;
+    }
+    .success-message {
+      display: none;
+      color: #2e8b57;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="volunteer-container">
+    <h1>Volunteer With Us</h1>
+    <form id="volunteer-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="interest">Area of Interest</label>
+      <select id="interest" name="interest" required>
+        <option value="">-- Select --</option>
+        <option value="training">Climate-Smart Training</option>
+        <option value="tech">Digital Advisory Platforms</option>
+        <option value="testbed">Innovation Testbeds</option>
+        <option value="events">Events & Outreach</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Why do you want to volunteer?</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit Application</button>
+      <div class="success-message" id="success-message">Thank you for volunteering! We will contact you soon.</div>
+    </form>
+  </div>
+  <script>
+    // Simple form handler for demo purposes
+    document.getElementById('volunteer-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('success-message').style.display = 'block';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
