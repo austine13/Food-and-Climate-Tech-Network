@@ -1649,3 +1649,21 @@ section, .hero, footer, .donation-section, .events-section, .gallery-frame, .pro
     max-width: 100% !important;
   }
 }
+@media (max-width: 700px) {
+  .hero,
+  #impact,
+  .donation-section,
+  .events-section,
+  .gallery-frame,
+  .projects-frame,
+  .partners,
+  .partners-marquee {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    border-radius: 0 !important;
+  }
+}
