@@ -205,6 +205,53 @@ section a:hover {
   }
 }
 
+/* ...existing code... */
+.programs-section {
+  padding: 3rem 1.5rem;
+  background-color: #181212;
+  text-align: center;
+}
+
+.programs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.program-card {
+  flex: 1 1 100px;
+  max-width: 250px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+.program-card h3 {
+  margin-bottom: 0.7rem;
+  color: #2e8b57;
+  font-size: 1.2rem;
+}
+.program-card p {
+  margin-bottom: 1rem;
+}
+.program-card .read-more {
+  color: #4caf50;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-top: auto;
+  transition: color 0.2s;
+}
+.program-card .read-more:hover {
+  color: #2196f3;
+}
+/* ...existing code... */
+
 /* Events */
 #events ul {
   list-style: none;
