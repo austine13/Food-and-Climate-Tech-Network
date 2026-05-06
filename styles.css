@@ -514,6 +514,8 @@ footer .social-links a:hover {
   padding: 2rem;
   width: 90%;
   max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
   border-radius: 12px;
   position: relative;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
